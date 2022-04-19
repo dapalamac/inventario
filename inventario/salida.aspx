@@ -141,6 +141,42 @@
             height: 24px;
         }
 
+        .text{
+
+
+                animation-duration:5s;
+                animation-name:texto;
+            }
+
+            @keyframes texto{
+
+                from{
+
+                    opacity:0;
+                }
+                to{
+
+                    opacity:1;
+                }
+            }
+
+            .formu {
+              animation-duration: 3s;
+              animation-name: slidein;
+            }
+
+            @keyframes slidein {
+              from {
+                margin-left: 100%;
+                width: 300%
+              }
+
+              to {
+                margin-left: 0%;
+                width: 100%;
+              }
+            }
+
     </style>
 </head>
 <body>
@@ -158,9 +194,8 @@
                         <th>
                             <img src="Imagenes/logoempresasolo.png" style="width:205px" class="logo"/>
                         </th>
-                        <th colspan="4" style="text-align:center; background-color:lightgrey; font-family:Consolas;" class="auto-style1">
-                            <strong style=" text-decoration: underline; font-size: 45px; color:darkorange"">BIENVENIDO AL SISTEMA DE INVENTARIO WEB</strong><br />
-                            <strong style=" text-decoration: wavy; font-size: 35px;"">INGRESE LA INFORMACION DE SALIDA </strong> <br />
+                        <th colspan="4" class="auto-style1">
+                            <img src="Imagenes/entrada.jpg" class="auto-style13"/>
                         </th>
                     </tr>
                     <tr>
@@ -174,6 +209,7 @@
 
           <br /><br />
     <center>
+    <div class="formu">
     <table class="auto-style4">
         <tr>
             <td class="auto-style22">
@@ -239,7 +275,8 @@
                  &nbsp;</td>
         </tr>  
     </table>
-   
+    </div>
+   <div class="text">
         <center>
             <asp:GridView CssClass="mGrid" ID="GridView1"  runat="server" AutoGenerateColumns="False" Width="1150px" Height="80px" HorizontalAlign="Center" Font-Bold="True" Font-Names="Arial">
             <Columns>
@@ -256,6 +293,7 @@
             </Columns>
         </asp:GridView>
        </center>
+       </div>
         </div>
          <table class="auto-style31">
              <tr>

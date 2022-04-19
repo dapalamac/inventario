@@ -119,6 +119,47 @@
         .auto-style12 {
             width: 98px;
         }
+
+        .text{
+
+
+                animation-duration:5s;
+                animation-name:texto;
+            }
+
+            @keyframes texto{
+
+                from{
+
+                    opacity:0;
+                }
+                to{
+
+                    opacity:1;
+                }
+            }
+
+        .formu {
+              animation-duration: 3s;
+              animation-name: slidein;
+            }
+
+            @keyframes slidein {
+              from {
+                margin-left: 100%;
+                width: 300%
+              }
+
+              to {
+                margin-left: 0%;
+                width: 100%;
+              }
+            }
+       
+
+        .auto-style13 {
+            margin-left: 0px;
+        }
        
 
         </style>
@@ -138,9 +179,8 @@
                         <th>
                             <img src="Imagenes/logoempresasolo.png" style="width:205px" class="logo"/>
                         </th>
-                        <th colspan="4" style="text-align:center; background-color:lightgrey; font-family:Consolas;" class="auto-style1">
-                            <strong style=" text-decoration: underline; font-size: 45px; color:darkorange"">BIENVENIDO AL SISTEMA DE INVENTARIO WEB</strong><br />
-                            <strong style=" text-decoration: wavy; font-size: 35px;"">INGRESE LA INFORMACION DE ENTRADA </strong> <br />
+                        <th colspan="4" class="auto-style1">
+                            <img src="Imagenes/entrada.jpg" class="auto-style13"/>
                         </th>
                     </tr>
                     <tr>
@@ -153,6 +193,7 @@
                  </table>
             <br /><br />
 <center>
+    <div class="formu">
     <table cellpadding="0" cellspacing="0" class="auto-style8" title="Ingrese">
         <tr>
             <td class="auto-style2">
@@ -231,6 +272,8 @@
 </center>
             <br /><br />
 
+        <div class="text">
+
          <center>
             <asp:GridView CssClass="mGrid" ID="GridView1"  runat="server" AutoGenerateColumns="False" Width="1150px" Height="80px" HorizontalAlign="Center" Font-Bold="True" Font-Names="Arial">
             <Columns>
@@ -246,6 +289,7 @@
             </Columns>
         </asp:GridView>
        </center>
+    </div>
     <br /><br />
     </div>
         <table style="width:100%;">
@@ -267,6 +311,7 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+       </div>
     </form>
 </body>
 </html>

@@ -20,11 +20,13 @@
             background-color: red;
         }
         .mGrid {
+            
             width: 100%;
             background-color: #fff;
             margin: 5px 0 10px 0;
             border: solid 1px #525252;
             border-collapse: collapse;
+
         }
 
             .mGrid td {
@@ -50,6 +52,44 @@
                 height: 40px;
 
             }
+
+            .text{
+
+
+                animation-duration:5s;
+                animation-name:texto;
+            }
+
+            @keyframes texto{
+
+                from{
+
+                    opacity:0;
+                }
+                to{
+
+                    opacity:1;
+                }
+            }
+
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 124%;
+        }
+        .auto-style4 {
+            height: 23px;
+            width: 609px;
+        }
+        .auto-style5 {
+            height: 23px;
+            width: 598px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 1400px;
+        }
 
     </style>
 </head>
@@ -89,8 +129,9 @@
             </p>
 
             ---------->
+        <div class="text">
 
-          <center>
+        <center>
             <asp:GridView CssClass="mGrid" ID="GridView3"  runat="server" AutoGenerateColumns="False" Width="1150px" Height="80px" HorizontalAlign="Center" Font-Bold="True" Font-Names="Arial">
             <Columns>
                 <asp:BoundField DataField="id" HeaderText="ID" />
@@ -105,16 +146,26 @@
             </Columns>
         </asp:GridView>
        </center>
-    <br /><br />
-
-            
+    <br /><br />    
         <center>
-            <br />
+            <table class="auto-style3">
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">
 
                 <asp:Button ID="btnagregar" runat="server" Text="ENTRADA DE INVENTARIO" class="botonagregar" Font-Bold="False" Font-Names="Arial" Font-Size="Small" />    
-            &nbsp;
+                    </td>
+                    <td class="auto-style6">
                 <asp:Button ID="btnsalida" runat="server" Text="SALIDA DE INVENTARIO" class="botonagregar" Font-Bold="False" Font-Names="Arial" Font-Size="Small" />    
-    </center>
+                    </td>
+                    <td class="auto-style1">&nbsp;</td>
+                </tr>
+            </table>
+         </div>
+            <br />
+
+            &nbsp;
+                </center>
     </form>
     </body>
 </html>
