@@ -91,6 +91,20 @@
             width: 1400px;
         }
 
+        .lalbelinfo{
+            
+            background-color: aqua;
+            width: 200px;
+            height: 50px;
+            margin-top: -80px;
+            margin-left: 420px;
+
+        }
+        .imagenbanner{
+
+            margin-right: 100px; 
+        }
+
     </style>
 </head>
 <body>
@@ -107,9 +121,14 @@
                         <th>
                             <img src="Imagenes/logoempresasolo.png" style="width:205px" class="logo"/>
                         </th>
-                        <th colspan="4" style="text-align:center; background-color:lightgrey; font-family:Consolas;" class="auto-style1">
-                            <strong style=" text-decoration: underline; font-size: 45px; color:darkorange"">BIENVENIDO AL SISTEMA DE INVENTARIO WEB</strong><br />
-                            <strong style=" text-decoration: wavy; font-size: 35px;"">USTED HA INGRESADO AL ESTACIONAMIENTO DE : <asp:Label ID="lblID0" runat="server"></asp:Label>
+                        <th colspan="4" style="text-align:center; font-family:Consolas;" class="auto-style1">
+                            <div class="imagenbanner">
+                            <img src="Imagenes/inventario.jpg" class="auto-style13"/>
+                            </div>
+                            <strong style=" color: white; text-decoration: wavy; font-size: 35px;"">
+                                <div class="lalbelinfo">
+                                <asp:Label ID="lblID0" runat="server"></asp:Label>
+                                </div>
                             </strong> <br />
                         </th>
                     </tr>

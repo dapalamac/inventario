@@ -97,38 +97,6 @@
             height: 24px;
         }
 
-        .auto-style30 {
-            width: 672px;
-        }
-        .auto-style31 {
-            width: 100%;
-        }
-        .auto-style32 {
-            width: 255px;
-            height: 25px;
-        }
-        .auto-style33 {
-            width: 672px;
-            height: 25px;
-        }
-        .auto-style34 {
-            height: 25px;
-        }
-        .auto-style35 {
-            width: 255px;
-            height: 21px;
-        }
-        .auto-style36 {
-            width: 672px;
-            height: 21px;
-        }
-        .auto-style37 {
-            height: 21px;
-        }
-        .auto-style38 {
-            width: 255px;
-        }
-
         .auto-style39 {
             width: 15px;
             height: 24px;
@@ -177,6 +145,19 @@
               }
             }
 
+            .imagenbanner{
+
+            margin-right: 100px; 
+
+            }
+
+        .auto-style42 {
+            width: 969px;
+        }
+        .auto-style43 {
+            width: 88%;
+        }
+
     </style>
 </head>
 <body>
@@ -195,7 +176,9 @@
                             <img src="Imagenes/logoempresasolo.png" style="width:205px" class="logo"/>
                         </th>
                         <th colspan="4" class="auto-style1">
-                            <img src="Imagenes/entrada.jpg" class="auto-style13"/>
+                            <div class="imagenbanner">
+                            <img src="Imagenes/salida.jpg" class="auto-style13"/>
+                            </div>
                         </th>
                     </tr>
                     <tr>
@@ -255,7 +238,7 @@
             <td>
                  &nbsp;</td>
             <td class="auto-style25">
-                 <asp:TextBox ID="Textobservacionsalida" runat="server" Height="20px" Width="194px" style="margin-left: 0px"  Font-Bold="False" Font-Names="Arial" Font-Size="Medium"></asp:TextBox>
+                 <asp:TextBox ID="Textobservacionsalida" runat="server" Height="73px" Width="257px" style="margin-left: 0px"  Font-Bold="False" Font-Names="Arial" Font-Size="Medium" TextMode="MultiLine"></asp:TextBox>
             </td>
             <td class="auto-style40">
                  &nbsp;</td>
@@ -295,25 +278,15 @@
        </center>
        </div>
         </div>
-         <table class="auto-style31">
-             <tr>
-                 <td class="auto-style32"></td>
-                 <td class="auto-style33"></td>
-                 <td class="auto-style34">
+          <table class="auto-style43">
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style42">&nbsp;</td>
+                <td>
                 <asp:Button ID="Button2" runat="server" Text="REGRESAR" class="botonagregar" />
                  </td>
              </tr>
-             <tr>
-                 <td class="auto-style35"></td>
-                 <td class="auto-style36"></td>
-                 <td class="auto-style37"></td>
-             </tr>
-             <tr>
-                 <td class="auto-style38">&nbsp;</td>
-                 <td class="auto-style30">&nbsp;</td>
-                 <td>&nbsp;</td>
-             </tr>
-         </table>
+             </table>
     </form>
     </body>
 </html>

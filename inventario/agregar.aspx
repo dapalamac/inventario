@@ -160,6 +160,11 @@
         .auto-style13 {
             margin-left: 0px;
         }
+
+        .imagenbanner{
+
+            margin-right: 100px; 
+        }
        
 
         </style>
@@ -180,7 +185,9 @@
                             <img src="Imagenes/logoempresasolo.png" style="width:205px" class="logo"/>
                         </th>
                         <th colspan="4" class="auto-style1">
+                            <div class="imagenbanner">
                             <img src="Imagenes/entrada.jpg" class="auto-style13"/>
+                            </div>
                         </th>
                     </tr>
                     <tr>
@@ -220,7 +227,7 @@
                 <h3>OBSERVACION</h3>
             </td>
             <td class="auto-style10">
-                 <asp:TextBox ID="TextObservacion"  runat="server" Font-Bold="False" Font-Names="Arial"></asp:TextBox>
+                 <asp:TextBox ID="TextObservacion"  runat="server" Font-Bold="False" Font-Names="Arial" Height="68px" TextMode="MultiLine" Width="189px"></asp:TextBox>
             </td>
         </tr>
           <tr>
