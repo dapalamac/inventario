@@ -78,17 +78,13 @@
         .auto-style3 {
             width: 124%;
         }
-        .auto-style4 {
-            height: 23px;
-            width: 609px;
-        }
         .auto-style5 {
             height: 23px;
-            width: 598px;
+            width: 485px;
         }
         .auto-style6 {
             height: 23px;
-            width: 1400px;
+            width: 506px;
         }
 
         .lalbelinfo{
@@ -103,6 +99,19 @@
         .imagenbanner{
 
             margin-right: 100px; 
+        }
+
+        .auto-style7 {
+            height: 23px;
+            width: 1637px;
+        }
+        .auto-style8 {
+            height: 23px;
+            width: 920px;
+        }
+        .auto-style9 {
+            height: 23px;
+            width: 567px;
         }
 
     </style>
@@ -169,7 +178,7 @@
         <center>
             <table class="auto-style3">
                 <tr>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
                     <td class="auto-style5">
 
                 <asp:Button ID="btnagregar" runat="server" Text="ENTRADA DE INVENTARIO" class="botonagregar" Font-Bold="False" Font-Names="Arial" Font-Size="Small" />    
@@ -177,6 +186,11 @@
                     <td class="auto-style6">
                 <asp:Button ID="btnsalida" runat="server" Text="SALIDA DE INVENTARIO" class="botonagregar" Font-Bold="False" Font-Names="Arial" Font-Size="Small" />    
                     </td>
+                    <td class="auto-style9">
+                <asp:Button ID="Button2" runat="server" Text="REGRESAR" class="botonagregar" Height="40px" Width="189px" />
+                    </td>
+                    <td class="auto-style7">
+                        &nbsp;</td>
                     <td class="auto-style1">&nbsp;</td>
                 </tr>
             </table>
